@@ -1,0 +1,16 @@
+contentColumnType: string
+fieldGroup: d6dcd64b-f047-48ff-9336-a67a6c8f8541
+handle: episodeDescription
+instructions: ''
+name: 'Episode Description'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: '1'
+  columnType: text
+  configFile: ''
+  purifyHtml: '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

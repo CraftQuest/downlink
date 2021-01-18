@@ -1,0 +1,13 @@
+{% extends "item/default" %}
+
+{% block itemContent %}
+	{% if entry.teaserCopy %}
+		{% if entry.teaserImage.one() %}
+		<div class="entry image full">
+			<img src="{{ entry.teaserImage.one().url }}"/>
+		</div>
+		{% endif %}
+    	{{ entry.teaserCopy }}
+    	<p><a href="{{ entry.url }}">Continue Reading</a></p>
+    {% endif %}
+{% endblock %}

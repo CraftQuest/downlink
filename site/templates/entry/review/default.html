@@ -1,0 +1,7 @@
+{% extends "entry/default" %}
+{% block itemContent %}
+    {{ parent() }}
+    {% if entry.bookASIN %}
+    <p><a href="http://www.amazon.com/dp/{{ entry.bookASIN }}/?tag=ryaire-20" class="button radius">Buy this Book</a></p>
+    {% endif %}
+{% endblock %}

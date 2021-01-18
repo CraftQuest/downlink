@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>HTML5 Audio Player for Zurb Foundation!</title>
+    <link href='./lib/css/foundation.min.css' rel='stylesheet' type='text/css'>
+    <link href='./lib/css/foundation-icons.css' rel='stylesheet' type='text/css'>
+    <link href='./dist/foundation-player.css' rel='stylesheet' type='text/css'>
+    <link href='./dist/demo.css' rel='stylesheet' type='text/css'>
+    <script src='./lib/js/jquery.min.js' type='text/javascript'></script>
+    <script src='./lib/js/foundation.min.js' type='text/javascript'></script>
+    <script src='./dist/foundation-player.js' type='text/javascript'></script>
+    <script src='./dist/demo.js' type='text/javascript'></script>
+  </head>
+  <body class='foundation-player-demo'>
+    <div class='row'>
+      <h2 class='text-center'>
+        <em class='fi-play'></em>
+        Foundation-player.js
+      </h2>
+    </div>
+    <div class='row'>
+      <div class='small-offset-0 small-12 medium-offset-2 medium-8 columns'>
+        <ul class='tabs foundation-player-tab' data-tabs='' id='players'>
+          <li class='tabs-title is-active'>
+            <a href='#sandbox'>API Sandbox</a>
+          </li>
+          <li class='tabs-title foundation-player-normal'>
+            <a href='#normal'>Normal</a>
+          </li>
+          <li class='tabs-title foundation-player-small'>
+            <a href='#small'>Small</a>
+          </li>
+        </ul>
+        <div class='tabs-content' data-tabs-content='players'>
+          <div class='tabs-panel is-active' id='sandbox'>
+            <div class='player-wrapper'>
+              <div class='foundation-player no-1'>
+                <ul class='player menu simple noselect'>
+                  <li class='player-button play'>
+                    <em class='fi-music'></em>
+                  </li>
+                  <li class='player-button rewind'>
+                    <em class='fi-refresh'></em>
+                  </li>
+                  <li class='player-button volume'>
+                    <em class='fi-volume'></em>
+                  </li>
+                  <li class='player-status time'>
+                    <span class='elapsed'>00:00</span>
+                  </li>
+                  <li class='player-progress'>
+                    <div class='progress round' role='progressbar'>
+                      <div class='progress-meter played'></div>
+                    </div>
+                  </li>
+                  <li class='player-status time'>
+                    <span class='remains'>-00:00</span>
+                  </li>
+                </ul>
+                <audio>
+                  <source src='https://sashaegorov.github.io/foundation-player/lib/audio/ukulele.m4a'>
+                </audio>
+              </div>
+            </div>
+            <br>
+            <ul class='accordion' data-accordion='' data-multi-expand='true' role='tablist'>
+              <li class='accordion-item is-active'>
+                <a aria-controls='info' class='accordion-title' href='#info' id='info' role='tab'>Intro</a>
+                <div aria-labelledby='info' class='accordion-content' data-tab-content='' id='info' role='tabpanel'>
+                  <p>
+                    This is super easy way to bring HTML5 audio player
+                    to your Foundation based project. Take a look to
+                    <a href='https://github.com/sashaegorov/foundation-player/blob/master/README.md'>README</a>
+                    and the
+                    <a href='https://github.com/sashaegorov/foundation-player/blob/master/index.html'>source of this page</a>.
+                    This tab is also sandbox for Foundation Player API.
+                    There is the
+                    <code>player</code>
+                    global variable. Fill free to experiment in your browser's
+                    JavaScript console.
+                  </p>
+                </div>
+              </li>
+              <li class='accordion-item'>
+                <a aria-controls='playback' class='accordion-title' href='#playback' id='playback' role='tab'>Playback control</a>
+                <div aria-labelledby='info' class='accordion-content' data-tab-content='' id='playback' role='tabpanel'>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Method</th>
+                        <th>Description</th>
+                        <th>Returns</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <code>playPause()</code>
+                        </td>
+                        <td>
+                          This method
+                          <a onclick='player.playPause()'>toggles</a>
+                          play or pause state of player.
+                        </td>
+                        <td>
+                          player object
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>play()</code>
+                        </td>
+                        <td>
+                          <a onclick='player.play()'>Starts</a>
+                          player instance.
+                        </td>
+                        <td>
+                          player object
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>pause()</code>
+                        </td>
+                        <td>
+                          <a onclick='player.pause()'>Pauses</a>
+                          player.
+                        </td>
+                        <td>
+                          player object
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>seekToTime()</code>
+                        </td>
+                        <td>
+                          Seeks to exact position. Call
+                          <code class='nobr'>player.seekToTime('00:42')</code>
+                          to move to
+                          <a onclick="player.seekToTime('00:42')">00:42</a>.
+                        </td>
+                        <td>
+                          player object
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>seekPercent()</code>
+                        </td>
+                        <td>
+                          Seeks to percentage. This code
+                          <code class='nobr'>player.seekPercent(0.5)</code>
+                          moves to
+                          <a onclick='player.seekPercent(0.5)'>50%</a>.
+                        </td>
+                        <td>
+                          player object
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>
+                    Is's possible to use
+                    <code class='nobr'>data-seek-to-percentage</code>
+                    and
+                    <code class='nobr'>data-seek-to-time</code>
+                    attributes with links.
+                    In order to enable feature just passed
+                    <code class='nobr'>{useSeekData: true}</code>
+                    option to player.
+                  </p>
+                  <p>
+                    <strong>NOTE:</strong>
+                    The player's instance which was initialized the
+                    latest will handle links in the document.
+                    Any player which was initialized before will
+                    not handle data links.
+                    This option is safer to use when there is
+                    only one player on the page.
+                  </p>
+                  <p>
+                    <code class='nobr'>&lt;a data-seek-to-percentage='0.5'&gt;50%&lt;/a&gt;</code>
+                    will create link which moves playhead to
+                    <a data-seek-to-percentage='0.5'>half</a>
+                    position after clicking on it.
+                  </p>
+                  <p>
+                    <code class='nobr'>&lt;a data-seek-to-time='00:42'&gt;00:42&lt;/a&gt;</code>
+                    will create link which moves playhead to
+                    <a data-seek-to-time='00:42'>00:42</a>
+                    position after clicking.
+                  </p>
+                  <p>
+                    Please note default
+                    <code>click</code>
+                    action for links will be prevented.
+                  </p>
+                </div>
+              </li>
+              <li class='accordion-item'>
+                <a aria-controls='volume' class='accordion-title' href='#volume' id='volume' role='tab'>Volume control</a>
+                <div aria-labelledby='volume' class='accordion-content' data-tab-content='' id='volume' role='tabpanel'>
+                  <strong:>TODO:</strong:>
+                  Table with API...
+                </div>
+              </li>
+              <li class='accordion-item'>
+                <a aria-controls='look' class='accordion-title' href='#look' id='look' role='tab'>Look and feel</a>
+                <div aria-labelledby='look' class='accordion-content' data-tab-content='' id='volume' role='tabpanel'>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Method</th>
+                        <th>Description</th>
+                        <th>Returns</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <code>togglePlayerSize()</code>
+                        </td>
+                        <td>
+                          This method
+                          <a onclick='player.togglePlayerSize()'>toggles</a>
+                          player size. Method returns current size of
+                          player which was set.
+                        </td>
+                        <td>
+                          <code>'small'</code>
+                          |
+                          <code>'normal'</code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code class='nobr'>setPlayerSize(size)</code>
+                        </td>
+                        <td>
+                          This method sets player size to one of possible values:
+                          <code class='nobr'>'<a onclick="player.setPlayerSize('small')">small</a>'</code>
+                          or
+                          <code class='nobr'>'<a onclick="player.setPlayerSize('normal')">normal</a>'</code>
+                          .
+                          Player has
+                          <code>'normal'</code>
+                          size by default.
+                        </td>
+                        <td>
+                          player object
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li class='accordion-item'>
+                <a aria-controls='sources' class='accordion-title' href='#sources' id='sources' role='tab'>Audio sources</a>
+                <div aria-labelledby='sources' class='accordion-content' data-tab-content='' id='volume' role='tabpanel'>
+                  <h4>Source via attribute</h4>
+                  <code class='nobr'>&lt;audio src=&quot;http://.../podcast.m4a&quot;&gt;&lt;/audio&gt;</code>
+                  <h4>Source via source</h4>
+                  <code class='nobr'>&lt;audio&gt;&lt;source src=&quot;http://.../podcast.m4a&quot;&gt;&lt;/audio&gt;</code>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class='tabs-panel' id='normal'>
+            <p>
+              Regular player setup. There is no options here.
+              <br>
+              <code>$('.foundation-player.no-2').foundationPlayer();</code>
+            </p>
+            <div class='foundation-player no-2'>
+              <ul class='player menu simple noselect'>
+                <li class='player-button play'>
+                  <em class='fi-music'></em>
+                </li>
+                <li class='player-button rewind'>
+                  <em class='fi-refresh'></em>
+                </li>
+                <li class='player-button volume'>
+                  <em class='fi-volume'></em>
+                </li>
+                <li class='player-status time'>
+                  <span class='elapsed'>00:00</span>
+                </li>
+                <li class='player-progress'>
+                  <div class='progress round' role='progressbar'>
+                    <div class='progress-meter played'></div>
+                  </div>
+                </li>
+                <li class='player-status time'>
+                  <span class='remains'>-00:00</span>
+                </li>
+              </ul>
+              <audio preload='none'>
+                <source src='./lib/audio/climbing.m4a'>
+              </audio>
+            </div>
+          </div>
+          <div class='tabs-panel' id='small'>
+            <p>
+              Small player setup:
+              <code class='nobr'>{ playerUISize: 'small' }</code>
+            </p>
+            <div class='foundation-player no-3'>
+              <ul class='player menu simple noselect'>
+                <li class='player-button play'>
+                  <em class='fi-music'></em>
+                </li>
+                <li class='player-button rewind'>
+                  <em class='fi-refresh'></em>
+                </li>
+                <li class='player-button volume'>
+                  <em class='fi-volume'></em>
+                </li>
+                <li class='player-status time'>
+                  <span class='elapsed'>00:00</span>
+                </li>
+                <li class='player-progress'>
+                  <div class='progress round' role='progressbar'>
+                    <div class='progress-meter played'></div>
+                  </div>
+                </li>
+                <li class='player-status time'>
+                  <span class='remains'>-00:00</span>
+                </li>
+              </ul>
+              <audio preload='none'>
+                <source src='./lib/audio/acoustic-b.m4a'>
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <footer class='footer'>
+        <p class='text-center about'>
+          <small>
+            Made with
+            <em class='fi-heart'></em>,
+            fun, keyboard and… with
+            <code>'single'</code>
+            quotes in source code.
+          </small>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

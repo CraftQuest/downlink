@@ -1,0 +1,5 @@
+{% extends "entry/default" %}
+{% block itemContent %}
+        {{ parent() }}
+		<p>{% for tag in entry.tags.all() %} <a href="{{ siteUrl }}tags/{{ tag.title | url_encode }}" class="button tiny radius">{{ tag.title }}</a> {% endfor %}</p>
+{% endblock %}

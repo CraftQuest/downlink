@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: 183cebdb-02fe-4dd5-8b3e-450522d38342
+handle: bookASIN
+instructions: 'The ASIN from Amazon.com for this book. Your affiliate ID will be automatically included in the URL. '
+name: 'Book ASIN'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,15 @@
+enableVersioning: true
+handle: blog
+name: Blog
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  35c13b6c-aaee-499a-9580-96963583b7f4:
+    enabledByDefault: true
+    hasUrls: true
+    template: entry
+    uriFormat: 'blog/{postDate|date("Y")}/{postDate|date("m")}/{slug}'
+type: channel

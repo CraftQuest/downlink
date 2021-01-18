@@ -1,0 +1,24 @@
+contentColumnType: string
+fieldGroup: d6dcd64b-f047-48ff-9336-a67a6c8f8541
+handle: episodeFile
+instructions: ''
+name: 'Episode File'
+searchable: true
+settings:
+  allowedKinds:
+    - audio
+  defaultUploadLocationSource: 'volume:7c831f23-da90-4f0d-90a2-454375ee2e8e'
+  defaultUploadLocationSubpath: '{slug}'
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: 'Add the MP3 file for this episode.'
+  singleUploadLocationSource: 'volume:7c831f23-da90-4f0d-90a2-454375ee2e8e'
+  singleUploadLocationSubpath: ''
+  sources:
+    - 'volume:7c831f23-da90-4f0d-90a2-454375ee2e8e'
+  useSingleFolder: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

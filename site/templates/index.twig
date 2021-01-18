@@ -1,0 +1,11 @@
+{% extends "_layout" %}
+{% block header %}
+  {{ parent() }}
+{% endblock %}
+{% block content %}
+{#  {% paginate craft.entries.section('blog', 'podcast', 'review').limit(20) as entries %}#}
+      {% for entry in craft.entries.section('blog', 'podcast', 'review').limit(10).all() %}
+      	{% include "item" %}
+      {% endfor %}
+{#      {% include 'pieces/pagination' %}#}
+{% endblock %}

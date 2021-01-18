@@ -1,0 +1,146 @@
+@import "settings";
+@import "foundation";
+
+
+/* Downlink CSS */
+
+
+	/* Global Styles */
+body {
+	background-color: $jet;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url(../images/background-stars.gif);
+	color: $vapor;
+}
+a {
+	color:rgb(252,61,33);
+}
+
+a:hover {
+	color: rgb(11,61,145);
+}
+
+h1 {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 3em;
+	color: $vapor;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+h2 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: $smoke;
+
+	a {
+		color: inherit;
+	}
+}
+h3 {}
+h4 {}
+h5 {}
+
+.header {
+	margin-top:2em;
+
+	ul.main-menu {
+		font-family: 'Space Mono', sans-serif;
+		list-style-type:none;
+		margin-top:1em;
+			li {
+				float:left;
+				margin-left:1.5em;
+			}
+	}
+}
+
+.tagline {
+	color: $monsoon;
+	font-size: 0.2 em;
+	font-family: 'Space Mono', sans-serif;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.content-area {
+	background-color: $black;
+	margin-top:3em;
+}
+
+.entry {
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 3em;
+	clear:both;
+	p {
+		font-size:1.2em;
+	}
+	.entry-image {
+		margin-bottom: 1em;
+		.caption {
+			margin-top:0.7em;
+			font-size:0.7em;
+		}
+	}
+	.left {
+		float:left;
+		width:50%;
+		padding-right: 1.5em;
+		margin-bottom:0;
+	}
+	.right {
+		float:right;
+		width:50%;
+		padding-left: 1.5em;
+		margin-bottom:0;
+	}
+
+	.player {
+		margin-top:1em;
+		margin-bottom:2em;
+	}
+
+}
+
+.link {
+
+	h2 {
+		font-size:1.5em;
+	}
+}
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
