@@ -1,0 +1,169 @@
+@import 'foundation-sites/foundation';
+@mixin round {
+  border-radius: 1000px;
+}
+
+// Main player colors
+$fp-color: $primary-color !default;
+$fp-color-hover: scale-color($fp-color, $lightness: -25%) !default;
+
+// Font sizes
+$fp-font-size-normal: rem-calc(23) !default;
+$fp-font-size-small: rem-calc(18) !default;
+// Progress bar size
+$fp-progress-width-normal: 200px !default;
+$fp-progress-width-small: 125px !default;
+// These numbers should be more or less reasonable
+$fp-progress-height-normal: $fp-font-size-normal * .8 !default;
+$fp-progress-height-small: $fp-font-size-small * .8 !default;
+
+// Auxillary styles
+// Disable selection. Seen here http://stackoverflow.com/questions/826782/
+.noselect {
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+// Foundation player styles
+@mixin foundation-player {
+  // Common styles for player parts
+  .foundation-player {
+
+    $sticky-bg: rgb(255, 255, 255);
+    background-color: $sticky-bg;
+    text-align: center;
+
+    &.sticky {
+      border-bottom: scale-color($fp-color, $alpha: -90%) 1px solid;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 42;
+    }
+
+    .disabled {
+      .player-button,
+      .player-status,
+      .player-progress {
+        opacity: .75;
+      }
+    }
+
+    .round {
+      @include round;
+      .progress-meter {
+        @include round;
+      }
+    }
+
+    .player {
+      display: inline-block;
+    }
+
+    .player-progress {
+      cursor: col-resize;
+
+      .progress-meter.played {
+        background: $fp-color;
+      }
+
+      .progress-meter.buffered {
+        background: $fp-color;
+        height: 100%;
+        opacity: .25;
+        position: absolute;
+        top: 0;
+      }
+    }
+
+    // Buttons and icons
+    .player-button,
+    .player-status {
+      color: $fp-color;
+      text-align: center;
+    }
+
+    .player-button {
+      cursor: pointer;
+      margin-left: 0; // No margin for buttons
+
+      &.rewind em:before {
+        color: $fp-color;
+        transform: scale(-1, 1); // Transform button, i.e. flip horizontal
+      }
+
+      em:hover:before {
+        color: $fp-color-hover;
+      }
+    }
+  }
+  // Styles related to normal player size
+  .foundation-player.normal {
+
+    .player-button,
+    .player-status,
+    .player-progress {
+      font-size: $fp-font-size-normal;
+      padding: 0 .25rem;
+    }
+
+    .player-status,
+    .player-progress {
+      margin-left: ($fp-font-size-normal / 4);
+    }
+
+    .player-button {
+      width: $fp-font-size-normal * $global-lineheight;
+      &.play { // Override Play iconsize
+        font-size: $fp-font-size-normal + 1;
+        // -1.7 is pretty magic here
+        margin: ($fp-font-size-normal / -1.7) 0;
+      }
+    }
+
+    .player-progress .progress {
+      height: $fp-progress-height-normal;
+      position: relative;
+      top: ($fp-font-size-normal * $global-lineheight / 2) - ($fp-progress-height-normal / 2);
+      width: $fp-progress-width-normal;
+    }
+  }
+  // Styles related to small player size
+  .foundation-player.small {
+
+    .player-button,
+    .player-status,
+    .player-progress {
+      font-size: $fp-font-size-small;
+      padding: 0 .125rem;
+    }
+
+    .player-status,
+    .player-progress {
+      margin-left: ($fp-font-size-small / 4);
+    }
+
+    .player-button {
+      width: $fp-font-size-small * $global-lineheight;
+
+      &.play { // Override Play iconsize
+        font-size: $fp-font-size-small + 1;
+        // -1.3 is pretty magic here
+        margin: ($fp-font-size-small / -1.3) 0;
+      }
+    }
+
+    .player-progress .progress {
+      height: $fp-progress-height-small;
+      position: relative;
+      top: ($fp-font-size-small * $global-lineheight / 2) - ($fp-progress-height-small / 2);
+      width: $fp-progress-width-small;
+    }
+  }
+}
+
+@include foundation-player;
