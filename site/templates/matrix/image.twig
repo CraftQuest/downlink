@@ -3,9 +3,11 @@
 
 {% block blockContent %}
 <div class="entry-image {{ block.layout }}">
-	<img src="{{ image.url }}" alt="{{ image.title }}" />
+	{% if image %}
+		<img src="{{ image.url }}" alt="{{ image.title }}" />
+	{% endif %}
 	{% if block.caption %}
-	<p class="caption">{{ block.caption }}</p>
+		<p class="caption">{{ block.caption }}</p>
 	{% endif %}
 </div>
 {% endblock %}
