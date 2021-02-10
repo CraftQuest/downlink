@@ -6,7 +6,7 @@
 {% set prevText = "Newer" %}
 {% endif %}
 
-{% set urlSuffix = (craft.request.queryStringWithoutPath) ? "?" ~ craft.request.queryStringWithoutPath : "" %}
+{% set urlSuffix = (craft.app.request.queryStringWithoutPath) ? "?" ~ craft.app.request.queryStringWithoutPath : "" %}
 
 {% if paginate.prevUrl or paginate.nextUrl %}
 <nav class="pagination">
