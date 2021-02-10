@@ -1,0 +1,25 @@
+{% extends "_layout" %}
+
+{% block content %}
+    <div class="font-copy text-white {{ entry.section.handle }}">
+        <div class="my-2 entry-header">
+            {% if entry.type == "link" %}
+                <h2 class="font-normal font-title break-normal text-gray-100 pt-6 text-1xl md:text-3xl">
+                    <a class="text-gray-100" href="{{ entry.linkUrl }}">{{ entry.title }}</a>
+                    <a href="{{ entry.url }}">&neArr;</a></h2>
+            {% else %}
+                <h2 class="font-normal font-title break-normal text-gray-100 pt-6 text-4xl md:text-4xl">
+                    <a class="text-gray-100" href="{{ entry.url }}">{{ entry.title }}</a>
+                </h2>
+                <p class="text-lg font-normal text-gray-100">{{ entry.postDate | date('M,d,Y') }}</p>
+            {% endif %}
+        </div>
+
+        {% block itemContent %}
+            {% if entry.body %}
+                {% include "matrix" with {"matrix": entry.body} %}
+            {% endif %}
+        {% endblock %}
+
+    </div>
+{% endblock %}

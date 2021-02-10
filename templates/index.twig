@@ -1,0 +1,14 @@
+{% extends "_layout.twig" %}
+
+{% block header %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+    {% paginate craft.entries.section(["blog", "podcast", "review"]).limit(20) as entries %}
+    {% for entry in entries %}
+        {% include "item" %}
+    {% endfor %}
+    {% include "pieces/pagination.twig" %}
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "entry/default" %}
+
+{% block itemContent %}
+    <div id="audio-player" class="pb-10">
+        <audio controls class="w-full bg-black-500">
+            <source src="{{ entry.episodeFile.one().url }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    {{ entry.episodeDescription }}
+{% endblock %}

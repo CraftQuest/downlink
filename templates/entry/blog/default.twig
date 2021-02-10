@@ -1,0 +1,18 @@
+{% extends "entry/default" %}
+
+{% block itemContent %}
+    {{ parent() }}
+    <div class="my-4">
+        <ul class="list-reset flex">
+            <li class="mr-3">
+                <a class="text-sm inline-block rounded-full py-1 px-3 bg-red-600 text-white" href="#">Tag One</a>
+            </li>
+            <li class="mr-3">
+                <a class="text-sm inline-block rounded-full py-1 px-3 bg-red-600 text-white" href="#">Tag Two</a>
+            </li>
+            <li class="mr-3">
+                <a class="text-sm inline-block rounded-full py-1 px-3 bg-red-600 text-white" href="#">Tag Three</a>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
