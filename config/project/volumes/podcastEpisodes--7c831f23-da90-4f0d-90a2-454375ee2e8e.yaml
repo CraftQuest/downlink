@@ -1,0 +1,38 @@
+fieldLayouts:
+  48315f31-0ea0-44ad-a10e-31db5ffb0cf0:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: podcastEpisodes
+hasUrls: true
+name: 'Podcast Episodes'
+settings:
+  path: $ASSETS_PODCAST_EPISODE_PATH
+sortOrder: 1
+type: craft\volumes\Local
+url: $ASSETS_PODCAST_EPISODE_URL

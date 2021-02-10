@@ -1,0 +1,29 @@
+/* line 2, ../src/demo.scss */
+.player-wrapper {
+  height: 62px; }
+
+/* line 6, ../src/demo.scss */
+.nobr {
+  white-space: nowrap; }
+
+/* line 14, ../src/demo.scss */
+.foundation-player-demo code {
+  font-size: 0.75rem;
+  font-family: Monaco, Consolas, 'Liberation Mono', Courier, monospace;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 3px; }
+/* line 22, ../src/demo.scss */
+.foundation-player-demo .accordion-item.is-active .accordion-title {
+  background-color: rgba(0, 0, 0, 0.1); }
+/* line 27, ../src/demo.scss */
+.foundation-player-demo .accordion-title {
+  font-size: 1.25rem; }
+  /* line 30, ../src/demo.scss */
+  .foundation-player-demo .accordion-title::before {
+    content: ''; }
+/* line 35, ../src/demo.scss */
+.foundation-player-demo .fi-heart {
+  color: #e74c3c; }
+/* line 39, ../src/demo.scss */
+.foundation-player-demo .footer {
+  color: #7f8c8d; }

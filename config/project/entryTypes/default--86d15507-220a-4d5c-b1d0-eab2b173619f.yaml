@@ -1,0 +1,25 @@
+fieldLayouts:
+  d64a50e0-3937-4444-a8f4-1173a41390a0:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 9491ba1e-9c32-45fe-a97f-b0d25dc40071
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 1d0a4430-e8d9-49c3-b910-64c5008d3f3b
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Podcast Details'
+        sortOrder: 1
+handle: default
+hasTitleField: true
+name: Default
+section: b69d7902-4ddd-45fb-8c40-80d77d3a82eb
+sortOrder: 0
+titleFormat: null

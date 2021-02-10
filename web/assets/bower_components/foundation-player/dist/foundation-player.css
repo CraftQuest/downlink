@@ -1,0 +1,117 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.1.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/* line 22, ../src/foundation-player.scss */
+.noselect {
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+/* line 33, ../src/foundation-player.scss */
+.foundation-player {
+  background-color: white;
+  text-align: center; }
+  /* line 39, ../src/foundation-player.scss */
+  .foundation-player.sticky {
+    border-bottom: rgba(33, 153, 232, 0.1) 1px solid;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 42; }
+  /* line 49, ../src/foundation-player.scss */
+  .foundation-player .disabled .player-button,
+  .foundation-player .disabled .player-status,
+  .foundation-player .disabled .player-progress {
+    opacity: .75; }
+  /* line 56, ../src/foundation-player.scss */
+  .foundation-player .round {
+    border-radius: 1000px; }
+    /* line 58, ../src/foundation-player.scss */
+    .foundation-player .round .progress-meter {
+      border-radius: 1000px; }
+  /* line 63, ../src/foundation-player.scss */
+  .foundation-player .player {
+    display: inline-block; }
+  /* line 67, ../src/foundation-player.scss */
+  .foundation-player .player-progress {
+    cursor: col-resize; }
+    /* line 70, ../src/foundation-player.scss */
+    .foundation-player .player-progress .progress-meter.played {
+      background: #2199e8; }
+    /* line 74, ../src/foundation-player.scss */
+    .foundation-player .player-progress .progress-meter.buffered {
+      background: #2199e8;
+      height: 100%;
+      opacity: .25;
+      position: absolute;
+      top: 0; }
+  /* line 84, ../src/foundation-player.scss */
+  .foundation-player .player-button,
+  .foundation-player .player-status {
+    color: #2199e8;
+    text-align: center; }
+  /* line 90, ../src/foundation-player.scss */
+  .foundation-player .player-button {
+    cursor: pointer;
+    margin-left: 0; }
+    /* line 94, ../src/foundation-player.scss */
+    .foundation-player .player-button.rewind em:before {
+      color: #2199e8;
+      transform: scale(-1, 1); }
+    /* line 99, ../src/foundation-player.scss */
+    .foundation-player .player-button em:hover:before {
+      color: #1374b4; }
+
+/* line 107, ../src/foundation-player.scss */
+.foundation-player.normal .player-button,
+.foundation-player.normal .player-status,
+.foundation-player.normal .player-progress {
+  font-size: 1.4375rem;
+  padding: 0 .25rem; }
+/* line 114, ../src/foundation-player.scss */
+.foundation-player.normal .player-status,
+.foundation-player.normal .player-progress {
+  margin-left: 0.35938rem; }
+/* line 119, ../src/foundation-player.scss */
+.foundation-player.normal .player-button {
+  width: 2.15625rem; }
+  /* line 121, ../src/foundation-player.scss */
+  .foundation-player.normal .player-button.play {
+    font-size: 2.4375rem;
+    margin: -0.84559rem 0; }
+/* line 128, ../src/foundation-player.scss */
+.foundation-player.normal .player-progress .progress {
+  height: 1.15rem;
+  position: relative;
+  top: 0.50312rem;
+  width: 200px; }
+
+/* line 138, ../src/foundation-player.scss */
+.foundation-player.small .player-button,
+.foundation-player.small .player-status,
+.foundation-player.small .player-progress {
+  font-size: 1.125rem;
+  padding: 0 .125rem; }
+/* line 145, ../src/foundation-player.scss */
+.foundation-player.small .player-status,
+.foundation-player.small .player-progress {
+  margin-left: 0.28125rem; }
+/* line 150, ../src/foundation-player.scss */
+.foundation-player.small .player-button {
+  width: 1.6875rem; }
+  /* line 153, ../src/foundation-player.scss */
+  .foundation-player.small .player-button.play {
+    font-size: 2.125rem;
+    margin: -0.86538rem 0; }
+/* line 160, ../src/foundation-player.scss */
+.foundation-player.small .player-progress .progress {
+  height: 0.9rem;
+  position: relative;
+  top: 0.39375rem;
+  width: 125px; }

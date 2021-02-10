@@ -1,0 +1,25 @@
+fieldLayouts:
+  02708298-ea20-41d0-a674-6fba7a7d8c0c:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 8cb1f015-2f0a-4758-89c3-fbb35b49a190
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4a7f66f8-f0f6-47b7-89de-5eca5fc48600
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Link Content'
+        sortOrder: 1
+handle: link
+hasTitleField: true
+name: Link
+section: 9f8d5e5d-08f3-4e6e-bb6b-0e0e63deae34
+sortOrder: 0
+titleFormat: null

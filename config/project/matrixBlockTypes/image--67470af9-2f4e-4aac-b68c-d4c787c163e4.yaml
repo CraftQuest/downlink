@@ -1,0 +1,107 @@
+field: f4696807-fad3-4e93-a26a-e1946637d383
+fieldLayouts:
+  6fc4afe9-a01f-45bf-a9cd-ce8b713d8d40:
+    tabs:
+      -
+        fields:
+          1beade96-c14b-406a-896b-e052a13ec594:
+            required: false
+            sortOrder: 2
+          942db2b2-2993-4398-95a5-fa14532c58d0:
+            required: false
+            sortOrder: 3
+          bc8a2715-5172-471b-8357-589ba0ab3209:
+            required: true
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  1beade96-c14b-406a-896b-e052a13ec594:
+    contentColumnType: text
+    fieldGroup: null
+    handle: caption
+    instructions: ''
+    name: Caption
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  942db2b2-2993-4398-95a5-fa14532c58d0:
+    contentColumnType: string
+    fieldGroup: null
+    handle: layout
+    instructions: ''
+    name: Layout
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - Left
+            -
+              - value
+              - left
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - Right
+            -
+              - value
+              - right
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - Full
+            -
+              - value
+              - full
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  bc8a2715-5172-471b-8357-589ba0ab3209:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:33c8318a-f8ad-43f7-8231-448c204a6ed9'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an image'
+      singleUploadLocationSource: 'volume:7c831f23-da90-4f0d-90a2-454375ee2e8e'
+      singleUploadLocationSubpath: ''
+      sources:
+        - 'volume:33c8318a-f8ad-43f7-8231-448c204a6ed9'
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Assets
+handle: image
+name: Image
+sortOrder: 3

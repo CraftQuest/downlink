@@ -1,0 +1,12 @@
+# Mac crap
+.DS_Store
+
+dist/foundation-player.dev.js
+spec/javascripts/*_spec.js
+.sass-cache
+
+# There is no reason to track this...
+Gemfile.lock
+
+# Ctags
+.tags*

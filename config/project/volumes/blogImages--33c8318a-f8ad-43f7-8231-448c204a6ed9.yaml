@@ -1,0 +1,38 @@
+fieldLayouts:
+  ab7aac97-56c9-42b8-aacf-bcff9c1ebd85:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: blogImages
+hasUrls: true
+name: 'Blog Images'
+settings:
+  path: $ASSETS_BLOG_IMAGES_PATH
+sortOrder: 2
+type: craft\volumes\Local
+url: $ASSETS_IMAGES_URL

@@ -1,0 +1,9 @@
+baseUrl: $BASE_URL
+enabled: true
+handle: en_us
+hasUrls: true
+language: en-US
+name: 'Downlink (en-US)'
+primary: true
+siteGroup: 8d76cad1-25d8-4b50-8cae-e68b02cac669
+sortOrder: 1

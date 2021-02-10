@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Downlink Podcast | Exploring Space from Here</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Rubik+Mono+One|Space+Mono:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/stylesheets/app.css" />
+    <script src="/assets/bower_components/modernizr/modernizr.js"></script>
+    {% block head %}
+    {% endblock %}
+  </head>
+  <body>
+  	{% block header %}
+    <div class="row header">
+      <div class="large-8 columns">
+        <h1><a href="/">Downlink</a></h1>
+        <p class="tagline">Exploring Space from Here</p>
+      </div>
+      <div class="large-4 columns">
+      {% include "pieces/nav" with {'loc': 'main'} %}
+      </div>
+    </div>
+    {% endblock %}
+    <div class="row content-area">
+      <div class="large-12 columns">
+      {% block content %}
+      {% endblock %}
+      </div>
+      <footer>
+      {% include "pieces/footer" %}
+      </footer>
+    </div>
+
+    {% block footerScripts %}
+    <script src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,18 @@
+src_files:
+  - /lib/js/jquery.min.js
+  - /lib/js/foundation.min.js
+  # Use development version of library, which has testing API:
+  - /dist/foundation-player.dev.js
+
+helpers:
+  - 'helpers/**/*.js'
+
+spec_files:
+  - '**/*spec.js'
+
+spec_helper: spec/javascripts/support/jasmine_helper.rb
+
+rack_options:
+  server: 'puma'
+
+random: true

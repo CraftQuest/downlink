@@ -1,0 +1,24 @@
+contentColumnType: string
+fieldGroup: f445487e-f6a2-471c-a08b-3096f57da2d0
+handle: teaserImage
+instructions: ''
+name: 'Teaser Image'
+searchable: true
+settings:
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:7c831f23-da90-4f0d-90a2-454375ee2e8e'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: 'Add image to use in homepage/listing page teaser.'
+  singleUploadLocationSource: 'volume:7c831f23-da90-4f0d-90a2-454375ee2e8e'
+  singleUploadLocationSubpath: ''
+  sources:
+    - 'volume:33c8318a-f8ad-43f7-8231-448c204a6ed9'
+  useSingleFolder: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

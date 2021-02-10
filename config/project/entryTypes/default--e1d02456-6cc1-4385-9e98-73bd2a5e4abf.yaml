@@ -1,0 +1,25 @@
+fieldLayouts:
+  e400c5e4-326e-47e1-9074-cc4a1de24b82:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: 'Review Title'
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: f4696807-fad3-4e93-a26a-e1946637d383
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 6f055d5e-e5e3-4363-81de-c7dff55ad3b3
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Review Content'
+        sortOrder: 1
+handle: default
+hasTitleField: true
+name: Default
+section: 0464fede-3a5f-4c7d-9de1-c1b8021eaa8d
+sortOrder: 0
+titleFormat: null

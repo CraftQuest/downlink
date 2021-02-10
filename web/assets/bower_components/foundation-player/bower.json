@@ -1,0 +1,40 @@
+{
+  "name": "foundation-player",
+  "homepage": "https://github.com/sashaegorov/foundation-player",
+  "authors": [
+    "Sasha Egorov <a.a.egoroff@gmail.com>",
+    "Rita Kondratyeva <candor.cane@gmail.com>"
+  ],
+  "description": "Dead simple player plugin for Foundation Sites",
+  "main": [
+    "dist/foundation-player.js",
+    "dist/foundation-player.css"
+  ],
+  "dependencies": {
+    "foundation-sites": "~6.1.0"
+  },
+  "keywords": [
+    "foundation",
+    "foundation-sites",
+    "audio",
+    "player"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "dist/demo.*",
+    "lib",
+    "spec",
+    "src/demo.*",
+    "bower_components",
+    "coffeelint.json",
+    "config.rb",
+    "config.ru",
+    "Gemfile*",
+    "Guardfile",
+    "index.*",
+    "node_modules",
+    "Procfile",
+    "Rakefile"
+  ]
+}
