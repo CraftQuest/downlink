@@ -4,17 +4,46 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
-            label: Title
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: 9491ba1e-9c32-45fe-a97f-b0d25dc40071
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 1d0a4430-e8d9-49c3-b910-64c5008d3f3b
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Podcast Details'
         sortOrder: 1
 handle: default
@@ -23,3 +52,5 @@ name: Default
 section: b69d7902-4ddd-45fb-8c40-80d77d3a82eb
 sortOrder: 0
 titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

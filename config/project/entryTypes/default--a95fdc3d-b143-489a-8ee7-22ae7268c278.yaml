@@ -4,25 +4,64 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
-            label: Title
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: 736e7c2a-c6c7-4609-b1f2-38e7709e56cf
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: cf2dac30-56a5-4a12-91a4-ed35d2eed4ab
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: f4696807-fad3-4e93-a26a-e1946637d383
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: b72c1e8b-f22a-42b5-846d-8314c08dd793
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Default
         sortOrder: 1
 handle: default
@@ -31,3 +70,5 @@ name: Default
 section: 9f8d5e5d-08f3-4e6e-bb6b-0e0e63deae34
 sortOrder: 0
 titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

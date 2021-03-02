@@ -5,8 +5,18 @@ instructions: null
 name: Tags
 searchable: true
 settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  limit: null
   localizeRelations: false
+  selectionLabel: null
+  showSiteMenu: true
   source: 'taggroup:237da2ff-504f-4e2c-bf6c-152bf831c8f1'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Tags

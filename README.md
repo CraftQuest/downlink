@@ -9,7 +9,7 @@ Before following along with the course, you need to make sure you have the sampl
     ```bash
     git clone git@github.com:CraftQuest/downlink.git
     ```
-2. In the project root, tnstall the dependencies with Composer. 
+2. In the project root, install the dependencies with Composer. 
     ```bash
     composer install
     ```
@@ -24,7 +24,7 @@ Before following along with the course, you need to make sure you have the sampl
     Follow the prompts to setup the site. You'll want to use a database and a current version of PHP. This site runs Craft 3.6+.
 5. Import the starter database
     ```bash
-   nitro db import db/downlink--2021-01-19-145754--v3.5.17.1.sql
+   nitro db import db/downlink--2021-03-02-200340--v3.6.7.sql
    ```
 6. Check that the site is running at the hostname you specified when setting up Nitro.
    

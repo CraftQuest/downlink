@@ -5,20 +5,29 @@ instructions: ''
 name: 'Episode File'
 searchable: true
 settings:
+  allowSelfRelations: false
+  allowUploads: true
   allowedKinds:
     - audio
   defaultUploadLocationSource: 'volume:7c831f23-da90-4f0d-90a2-454375ee2e8e'
   defaultUploadLocationSubpath: '{slug}'
   limit: '1'
   localizeRelations: false
+  previewMode: full
   restrictFiles: '1'
   selectionLabel: 'Add the MP3 file for this episode.'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
   singleUploadLocationSource: 'volume:7c831f23-da90-4f0d-90a2-454375ee2e8e'
   singleUploadLocationSubpath: ''
+  source: null
   sources:
     - 'volume:7c831f23-da90-4f0d-90a2-454375ee2e8e'
-  useSingleFolder: ''
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Assets

@@ -1,4 +1,4 @@
-contentColumnType: string
+contentColumnType: text
 fieldGroup: d6dcd64b-f047-48ff-9336-a67a6c8f8541
 handle: episodeDescription
 instructions: ''
@@ -9,8 +9,19 @@ settings:
   availableVolumes: '*'
   cleanupHtml: '1'
   columnType: text
-  configFile: ''
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
   purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: true
+  removeInlineStyles: true
+  removeNbsp: true
+  showHtmlButtonForNonAdmins: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  uiMode: enlarged
 translationKeyFormat: null
 translationMethod: none
 type: craft\redactor\Field

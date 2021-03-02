@@ -3,16 +3,34 @@ fieldLayouts:
   6fc4afe9-a01f-45bf-a9cd-ce8b713d8d40:
     tabs:
       -
-        fields:
-          1beade96-c14b-406a-896b-e052a13ec594:
-            required: false
-            sortOrder: 2
-          942db2b2-2993-4398-95a5-fa14532c58d0:
-            required: false
-            sortOrder: 3
-          bc8a2715-5172-471b-8357-589ba0ab3209:
-            required: true
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: bc8a2715-5172-471b-8357-589ba0ab3209
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1beade96-c14b-406a-896b-e052a13ec594
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 942db2b2-2993-4398-95a5-fa14532c58d0
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -24,11 +42,14 @@ fields:
     name: Caption
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
@@ -40,40 +61,41 @@ fields:
     name: Layout
     searchable: true
     settings:
+      optgroups: true
       options:
         -
           __assoc__:
-            -
-              - default
-              - ''
             -
               - label
               - Left
             -
               - value
               - left
-        -
-          __assoc__:
             -
               - default
               - ''
+        -
+          __assoc__:
             -
               - label
               - Right
             -
               - value
               - right
-        -
-          __assoc__:
             -
               - default
               - ''
+        -
+          __assoc__:
             -
               - label
               - Full
             -
               - value
               - full
+            -
+              - default
+              - ''
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
@@ -85,22 +107,31 @@ fields:
     name: Image
     searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:33c8318a-f8ad-43f7-8231-448c204a6ed9'
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: 'Add an image'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
       singleUploadLocationSource: 'volume:7c831f23-da90-4f0d-90a2-454375ee2e8e'
       singleUploadLocationSubpath: ''
+      source: null
       sources:
         - 'volume:33c8318a-f8ad-43f7-8231-448c204a6ed9'
-      useSingleFolder: ''
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\Assets
 handle: image
 name: Image
