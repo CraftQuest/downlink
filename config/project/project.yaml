@@ -1,4 +1,4 @@
-dateModified: 1614715403
+dateModified: 1617812675
 email:
   fromEmail: ryan@mijingo.com
   fromName: Downlink
@@ -17,7 +17,7 @@ system:
   edition: pro
   live: true
   name: Downlink
-  schemaVersion: 3.6.4
+  schemaVersion: 3.6.7
   timeZone: UTC
 users:
   allowPublicRegistration: false
